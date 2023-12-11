@@ -117,7 +117,8 @@ span:hover {
     font-family:'Courier New', Courier, monospace;
     font-size: 18;
     margin: 20px 0 40px;
-    transition-duration: 500ms;
+    transition-duration: 1000ms;
+    padding: 10px;
 }
 
 .home-content p:hover {
