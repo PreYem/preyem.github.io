@@ -247,7 +247,7 @@ span:hover {
 }
 
 iframe {
-    border: dashed;
+    border: solid;
     border-color: #00abf0;
     margin-left: 50px;
     margin-top: 10px;
