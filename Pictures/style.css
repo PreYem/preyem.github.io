@@ -117,7 +117,7 @@ span:hover {
     font-family:'Courier New', Courier, monospace;
     font-size: 18;
     margin: 20px 0 40px;
-    transition-duration: 1000ms;
+    
     padding: 10px;
 }
 
@@ -126,6 +126,15 @@ span:hover {
     opacity: 90%;
     border: 2px solid black;
     animation: Bord_Animation 30000ms infinite;
+    transition-duration: 500ms;
+    transform: scale(1.05);
+    transition-timing-function: ease-in;
+}
+
+.home-content p:not(:hover) {
+    transition: transform 1000ms ease-out;
+    transform: scale(1);
+    color: white;
 }
 
 .home-content .btn-box {
