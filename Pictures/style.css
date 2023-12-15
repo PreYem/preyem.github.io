@@ -361,13 +361,13 @@ footer {
     opacity: 0.8;
     transform: scale(1);
     transition-duration: 500ms;
-    border: 2px dotted;
+    border: 2px solid;
     padding: 15px;
     animation: Bord_Animation 30000ms infinite;
 }
 
 .fill_form:hover {
-    color-scheme:#081b29 ;
+    background-color:rgba(18, 40, 56, 0.7) ;
     transition-property: all;
     opacity: 1 ;
     transform: scale(1.1);
