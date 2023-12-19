@@ -12,32 +12,58 @@
 }
 
 body {
-
-    color: white;
+    background-color: black;
     z-index: 1;
 }
 
+.logo_Yem,.logo_ {
+    position: absolute; /* Positions the images relative to their containing element */
+    top: 0; /* Adjust as needed */
+    left: 0; /* Adjust as needed */
+}
+
+.logo_ {
+    height: 949px;
+    width: 1879px;
+}
+
+
+.logo_Yem {
+    z-index: 1; /* Places this image above the other */
+    left: 765px;
+    top: 350px;
+    height: 150px;
+    width: 150px;
+    animation: yem-logo 1500ms ease-in-out forwards;
+}
+
+@keyframes yem-logo {
+    0% {transform: translate(20px, 50px);}
+    60% {transform: translate(20px, 50px);}
+    100% {transform: translate(-800px, -500px);}
+
+    
+    
+}
+
 .logo-container {
-    position: fixed;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-    opacity: 0;
-    animation: logoAnimation 1000ms ease-in-out forwards;
+    opacity: 1;
+    animation: logoAnimation 1500ms ease-in-out forwards;
+    
 }
 
 @keyframes logoAnimation {
-    0% {opacity: 1;
-        z-index: 9999;}
-
-
-    50% {opacity: 1; 
-        z-index: 9999;}
-
-    100% {opacity: 0;
-        z-index: -1;}
+    0% {opacity: 1; z-index: 9999;}
+    50% {opacity: 1;  z-index: 9999;}
+    100% {opacity: 0;z-index: -1;}
 }
+
+
+
   
 
 .header {
@@ -121,6 +147,7 @@ span:hover {
 }
 
 .home-content h1 {
+    color: white;
     -webkit-touch-callout: none;
     -webkit-user-select: none; 
     -khtml-user-select: none; 
@@ -144,10 +171,18 @@ span:hover {
 
 .home-content p {
     font-family:'Courier New', Courier, monospace;
-    font-size: 16px;
+    font-size: 15px;
     margin: -5px 0 40px;
     padding: 10px;
 }
+
+.BGVid {
+    filter: blur(10px);
+    opacity: 60%;
+}
+
+
+
 
 .home-content p:hover {
     background-color: #081b29;
@@ -158,6 +193,7 @@ span:hover {
     transform: scale(1.05);
     transition-timing-function: ease-in;
 }
+
 
 .home-content p:not(:hover) {
     transition: transform 1000ms ease-out;
@@ -300,6 +336,7 @@ iframe:hover {
 }
 
 h4 {
+    color: white;
    margin-left: 50px;
    font-weight: 600;
    font-size: 30px;
@@ -364,6 +401,7 @@ footer {
     border: 2px solid;
     padding: 15px;
     animation: Bord_Animation 30000ms infinite;
+    z-index: 1;
 }
 
 .fill_form:hover {
