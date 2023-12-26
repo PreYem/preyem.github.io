@@ -182,11 +182,9 @@ span:hover {
 }
 
 
-
-
 .home-content p:hover {
     background-color: #081b29;
-    opacity: 90%;
+    opacity: 85%;
     border: 2px solid black;
     animation: Bord_Animation 30000ms infinite;
     transition-duration: 500ms;
