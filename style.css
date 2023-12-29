@@ -17,9 +17,9 @@ body {
 }
 
 .logo_Yem,.logo_ {
-    position: absolute; /* Positions the images relative to their containing element */
-    top: 0; /* Adjust as needed */
-    left: 0; /* Adjust as needed */
+    position: absolute; 
+    top: 0; 
+    left: 0; 
 }
 
 .logo_ {
@@ -29,7 +29,7 @@ body {
 
 
 .logo_Yem {
-    z-index: 1; /* Places this image above the other */
+    z-index: 1; 
     left: 765px;
     top: 350px;
     height: 150px;
