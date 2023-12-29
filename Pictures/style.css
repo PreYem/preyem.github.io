@@ -11,15 +11,16 @@
     src: url(Font_01.ttf);
 }
 
+
 body {
     background-color: black;
     z-index: 1;
 }
 
 .logo_Yem,.logo_ {
-    position: absolute; /* Positions the images relative to their containing element */
-    top: 0; /* Adjust as needed */
-    left: 0; /* Adjust as needed */
+    position: absolute; 
+    top: 0; 
+    left: 0; 
 }
 
 .logo_ {
@@ -29,7 +30,7 @@ body {
 
 
 .logo_Yem {
-    z-index: 1; /* Places this image above the other */
+    z-index: 1; 
     left: 765px;
     top: 350px;
     height: 150px;
@@ -183,10 +184,10 @@ span:hover {
 
 
 .home-content p:hover {
-    background-color: #081b29;
+    background-color: #ffffff;
     opacity: 85%;
     border: 2px solid black;
-    animation: Bord_Animation 30000ms infinite;
+
     transition-duration: 500ms;
     transform: scale(1.05);
     transition-timing-function: ease-in;
