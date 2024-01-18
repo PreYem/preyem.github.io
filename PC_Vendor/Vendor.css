@@ -6,10 +6,14 @@
 }
 
 body {
-    background-color: #383434;
+    background-color: #e4e8f3;
     z-index: 1;
 }
 
+
+p {
+    background-color: white;
+}
 .header {
     position: fixed; 
     top: 0; 
@@ -17,13 +21,17 @@ body {
     width: 235px;
     height: 100%;
     background-color: #37005c;
-    color: #fff; /* Text color */
-    padding: 100px; /* Padding for content inside the sidebar */
-    box-sizing: border-box; /* Include padding in width/height calculation */
-    transform: translateX(-200px); /* Move sidebar out of the viewport initially */
-    transition: transform 0.3s ease; /* Adding a smooth transition effect */
+    color: #fff; 
+    padding: 100px; 
+    box-sizing: border-box; 
+    transform: translateX(-200px); 
+    transition: transform 0.3s ease; 
     justify-content: space-between;
     text-align: center;
+}
+
+.span {
+    color: #000000;
 }
 
 .navbar {
@@ -92,6 +100,7 @@ body {
 
 #Home img {
     height: 50px;
+    width: 60px;
 }
 
 
@@ -127,7 +136,7 @@ header #Home {
 
 .product_desc p {
     margin-top: 15px;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 20px;
     margin-right: 20px;
     width: 1620px;
@@ -154,6 +163,7 @@ header #Home {
 
 
 .product:hover {
+    color: white;
     transform: scale(1.1);
     background-color: #37005c;
     border: 2px solid #076bdd;
@@ -190,6 +200,7 @@ i {
 }
 .Line_01 {
     display: flex;
+    justify-content: space-between;
 
     padding: 15px;
 }
@@ -229,11 +240,11 @@ footer {
     height: 40px;
     background: transparent;
     justify-content: space-between;
+    color: white;
 
     border-radius: 50%;
     padding: 5px;
     font-size: 15px;
-    color: #00abf0;
     text-decoration: none;
     z-index: 1;
     overflow: hidden;
@@ -262,4 +273,73 @@ footer {
     40% { border-color: #00abf0; color: #00abf0; }
     60% { border-color: #8c00ff; color: #8c00ff;}
     80% { border-color: #09024d; color: #23834e;} 
+}
+
+
+
+  
+.container{
+    width: 100%;
+    position: relative;
+    margin-top: 320px;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    border: 5px solid #000000;
+    border-radius: 20px;
+    box-shadow: 5px 10px 20px rgba(30,30,200,0.3);
+    height: auto;
+    margin-bottom: -300px;
+}
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    animation: slide ease 20s infinite;
+    height: auto;
+
+}
+
+
+@keyframes slide {
+    0%, 100% {
+        transform: translateX(0%);
+    }
+    15% {
+        transform: translateX(0%);
+    }
+    20% {
+        transform: translateX(-100%);
+    }
+    35% {
+        transform: translateX(-100%);
+    }
+
+    40% {
+        transform: translateX(-200%);
+    }
+    55% {
+        transform: translateX(-200%);
+    }
+
+    60% {
+        transform: translateX(-300%);
+    }
+    75% {
+        transform: translateX(-300%);
+    }
+
+    80% {
+        transform: translateX(-400%);
+    }
+    95% {
+        transform: translateX(-400%);
+    }
+
+}
+
+
+img{
+    width: 100%;
 }
