@@ -113,10 +113,78 @@ body {
 }
 
 .navbar a:hover {
-    color: rgba(9,132,192,255);
-    font-size: 25px;
+    /*color: rgba(9,132,192,255);
+    font-size: 25px;*/
     transition-duration: 250ms;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+ul {
+    list-style: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    transition: ease-in 1000ms;
+}
+
+.dropdown-content {
+    margin-top: 1px;
+    display: none;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    justify-content: middle;
+    align-items: middle;
+
+    transition: ease-in 1000ms;
+
+    z-index: 1;
+
+}
+
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  margin: 30px 10px;
+  padding-left: 10px;
+  width: 110px;
+  height: 30px;
+  display: block;
+  font-size: 17px;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  transition: ease-in 500ms;
+}
+
+.dropdown-content a:hover {
+  background-color: #9cc2d3;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
 
 .home {
     background-size: cover;
@@ -176,9 +244,26 @@ span:hover {
     padding: 10px;
 }
 
-.BGVid {
-    filter: blur(10px);
-    opacity: 60%;
+
+
+.blur-opacity {
+    filter: blur(40px);
+    opacity: 0.2;
+}
+
+.blur-opacity.blur-out {
+    filter: blur(15px);
+    opacity: 0.8;
+}
+
+
+#Arrow_Down {
+    width: 20px;
+    transition: ease 0.5s;
+}
+
+header:hover #Arrow_Down {
+    color: #00abf0;
 }
 
 
@@ -368,6 +453,8 @@ h4 {
     right: 0;
     bottom: 0;
     z-index: -1;
+    transition: filter 0.5s ease, opacity 0.5s ease;
+    
 }
 
 #Arrow {
@@ -400,6 +487,7 @@ footer {
     padding: 15px;
     animation: Bord_Animation 30000ms infinite;
     z-index: 1;
+    margin-left: 31%;
 }
 
 .fill_form:hover {
