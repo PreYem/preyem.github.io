@@ -9,98 +9,112 @@
     <link rel="icon" href="Pictures/Y_Logo.png" type="image/png">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="Portfolio.js"></script>
-    
+   
 
 </head>
 
 <body>
-    
-    <div class="logo-container">
-        <img src="Pictures/YEM.png" alt="Logo" class="logo_Yem">
-        <img src="Pictures/Black-Color.png" alt="Logo" class="logo_">  
+    <div class="center-container">
+        
+        <button id="show-portfolio-btn">
+            <i class='bx bx-chevron-right bx-fade-left' id="PointArrowRight"></i>
+            <i class='bx bx-play-circle bx-tada'></i>
+            <i class='bx bx-chevron-left bx-fade-right' id="PointArrowRight"></i>
+        </button>
+        
     </div>
 
-    <header class="header">
-        <a href="#" class="logo"><img src="Pictures/YEM.png"></a>
-        <nav class="navbar">
-
-            <a href="index.html">Home</a>
-            <a href="Contact.html">Contact</a>
-            <div class="dropdown">
-            <a href="#">Projects <i class="bx">▼</i></a>
-            <div class="dropdown-content">
-                <a href="PC_Vendor/PC_Vendor.html" target="_blank">PC Vendor</a>
-                <a href="Projects.html">More...</a>
-
-            </div>
-            </div>
-            
-
-        </nav>
-    </header>
-    <section class="home">
-        
-        <div>
-            <div class="home-content">
-                <div class="BGVideo">
-                    <video autoplay loop muted plays-inline class="BGVid">
-                        <source src="Pictures/Sona.mp4" type="video/mp4">
-                    </video>
-            </div>
-            
-                <h1>Hello, I'm <span>Y</span>oussef <span>E</span>L <span>M</span>OUMEN</h1>
-                <br>
-                <h3>OFPPT Intern</h3>
-                <br>
-                <p>In 2015, I graduated from IBN ROMI high school and jumped headfirst into the wild world of learning.
-                    I attended the univertiy of science BEN M'SIK studying physics and chemistry, but then I took a detour through economics 
-                    in the FSJES university in AIN SBAA, and worked for a bit as a telemarketing agent for the company MAJOREL.
-                    <br>
-                    Currently studying Programming and Web development at the Specialized Institute of Management and IT 
-                    <a href="https://www.ofppt.ma/" target="_blank" style="text-decoration:solid; color: red;">(ISGI)</a>, Casablanca, Morocco.
-                    <br><br>
-                    When I'm not actively coding,  I immerse myself in World of Warcraft Rated PVP or losing my sanity in League Solo Queue.
-                    But that's not all, I also I dabble in the art of creating and editing videos in my downtime.
-                    It's my way of adding some extra flair to life and unleashing my creative side.<br><br>
-                    This webpage marks my first venture into web development, and I hope you find it enjoyable. 
-                    You can view the repository and the source code for this website on GitHub by clicking
-                    <a href="https://github.com/PreYem/preyem.github.io" style="text-decoration: none; color: red; border: 1px solid; border-color: #00abf0;">here</a>.
-                </p>
-                <div class="btn-box">
-                    
-                    <a href="Contact.html">Reach Out</a>
-                    <a href="#">Donate</a>
+    <div id="portfolio-content" style="display: none;">
+        <div class="logo-container">
+            <img src="Pictures/YEM.png" alt="Logo" class="logo_Yem">
+            <img src="Pictures/Black-Color.png" alt="Logo" class="logo_">  
+        </div>
+    
+        <header class="header">
+            <a href="#" class="logo"><img src="Pictures/YEM.png"></a>
+            <nav class="navbar">
+    
+                <a href="index.html">Home</a>
+                <a href="Contact.html">Contact</a>
+                <div class="dropdown">
+                <a href="#">Projects <i class="bx">▼</i></a>
+                <div class="dropdown-content">
+                    <a href="PC_Vendor/PC_Vendor.html" target="_blank">PC Vendor</a>
+                    <a href="Projects.html">More...</a>
+    
                 </div>
-            </div>
-
-        </div>
-
-        <div class="video">
-            <h4>My Latest <span style="color: red;"><a href="https://www.youtube.com/@yem17" target="_blank" style="text-decoration: none; color: red;">Youtube</a></span>  
-                Video <span id="Arrow"><i class='bx bx-down-arrow-alt' ></i></span></h4>
+                </div>
                 
-            <iframe src="https://www.youtube.com/embed/EHABm7H0zG0" height="100%" width="100%"></iframe>
-        </div>
+    
+            </nav>
+        </header>
+        <section class="home">
+            
+            <div>
+                <div class="home-content">
+                    <div class="BGVideo">
+                        <video autoplay loop muted plays-inline class="BGVid">
+                            <source src="Pictures/Sona.mp4" type="video/mp4">
+                        </video>
+                </div>
+                
+                    <h1>Hello, I'm <span>Y</span>oussef <span>E</span>L <span>M</span>OUMEN</h1>
+                    <br>
+                    <h3>OFPPT Intern</h3>
+                    <br>
+                    <p>In 2015, I graduated from IBN ROMI high school and jumped headfirst into the wild world of learning.
+                        I attended the univertiy of science BEN M'SIK studying physics and chemistry, but then I took a detour through economics 
+                        in the FSJES university in AIN SBAA, and worked for a bit as a telemarketing agent for the company MAJOREL.
+                        <br>
+                        Currently studying Programming and Web development at the Specialized Institute of Management and IT 
+                        <a href="https://www.ofppt.ma/" target="_blank" style="text-decoration:solid; color: red;">(ISGI)</a>, Casablanca, Morocco.
+                        <br><br>
+                        When I'm not actively coding,  I immerse myself in World of Warcraft Rated PVP or losing my sanity in League Solo Queue.
+                        But that's not all, I also I dabble in the art of creating and editing videos in my downtime.
+                        It's my way of adding some extra flair to life and unleashing my creative side.<br><br>
+                        This webpage marks my first venture into web development, and I hope you find it enjoyable. 
+                        You can view the repository and the source code for this website on GitHub by clicking
+                        <a href="https://github.com/PreYem/preyem.github.io" style="text-decoration: none; color: red; border: 1px solid; border-color: #00abf0;">here</a>.
+                    </p>
+                    <div class="btn-box">
+                        
+                        <a href="Contact.html">Reach Out</a>
+                        <a href="#">Donate</a>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div class="video">
+                <h4>My Latest <span style="color: red;"><a href="https://www.youtube.com/@yem17" target="_blank" style="text-decoration: none; color: red;">Youtube</a></span>  
+                    Video <span id="Arrow"><i class='bx bx-down-arrow-alt' ></i></span></h4>
+                    
+                <iframe src="https://www.youtube.com/embed/EHABm7H0zG0" height="100%" width="100%"></iframe>
+            </div>
+    
+        </section>
+    
+        <audio id="Audio_01" >
+            <source src="Pictures/Audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    
+    
+    
+    
+        <footer>
+            <div class="home-sci">
+                <a href="https://discordapp.com/users/195276785586274315" target="_blank"><i class='bx bxl-discord-alt'></i></a>
+                <a href="https://twitter.com/Dinacti" target="_blank"><i class='bx bxl-twitter' ></i></a>
+                <a href="https://www.youtube.com/@yem17" target="_blank"><i class='bx bxl-youtube' ></i></a>
+                <a href="https://github.com/PreYem" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://simplearmory.com/#/eu/ravencrest/yemboi/collectable/mounts" target="_blank"><i class='bx bxs-shield-alt-2'></i></a>
+            </div>
+        </footer>
 
-    </section>
-
-    <audio id="Audio_01" autoplay>
-        <source src="Pictures/Audio.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-
-
-
-
-    <footer>
-        <div class="home-sci">
-            <a href="https://discordapp.com/users/195276785586274315" target="_blank"><i class='bx bxl-discord-alt'></i></a>
-            <a href="https://twitter.com/Dinacti" target="_blank"><i class='bx bxl-twitter' ></i></a>
-            <a href="https://www.youtube.com/@yem17" target="_blank"><i class='bx bxl-youtube' ></i></a>
-            <a href="https://github.com/PreYem" target="_blank"><i class='bx bxl-github'></i></a>
-            <a href="https://simplearmory.com/#/eu/ravencrest/yemboi/collectable/mounts" target="_blank"><i class='bx bxs-shield-alt-2'></i></a>
-        </div>
-    </footer>
+    </div>
+    
+    
 
 </body>
 
