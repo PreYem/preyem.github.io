@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const audio = document.getElementById('Audio_01');
-    audio.volume = 0.1;
+    audio.volume = 0.05;
 
     const video = document.querySelector('.BGVid');
     const paragraph = document.querySelector('.home-content p');
