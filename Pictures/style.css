@@ -6,6 +6,9 @@
 }
 
 
+
+
+
 @font-face {
     font-family:font_01 ;
     src: url(Font_01.ttf);
@@ -113,13 +116,29 @@ body {
 }
 
 .navbar a:hover {
-    /*color: rgba(9,132,192,255);
-    font-size: 25px;*/
+    color: rgba(9,132,192,255);
+
     transition-duration: 250ms;
 }
 
 
+.Button {
+    background-color: #a634db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 500ms, color 500ms, transform 500ms;
+    padding: 2px;
 
+    align-items: center;
+}
+
+.Button:hover {
+    background-color: #217dbb;
+    transform: scale(1.2);
+}
 
 
 
@@ -287,7 +306,8 @@ span:hover {
 
 #show-portfolio-btn:hover {
     font-size: 25px;
-    transform: rotate(180deg);
+    transform: rotate(180deg); 
+    
 
 }
 
@@ -536,12 +556,12 @@ footer {
     margin-left: 31%;
 }
 
-.fill_form:hover {
-    background-color:rgba(18, 40, 56, 0.7) ;
+.fill_form:hover,
+.fill_form.clicked {
+    background-color: rgba(18, 40, 56, 0.7);
     transition-property: all;
-    opacity: 1 ;
+    opacity: 1;
     transform: scale(1.1);
-    
 }
 
 
@@ -571,112 +591,92 @@ footer {
 
 
 
-
 @media screen and (max-width: 1080px) {
-    .header {
-      padding: 10px;
-    }
-  
-    .navbar {
-      display: none;
-
-    }
-  
-    .navbar a {
-      display: block;
-      margin: 10px 0;
-      text-align: center;
-    }
-  
-    .logo img {
-      height: 50px;
-      width: 50px;
-    }
-  
-    .home {
-      padding: 20px;
-      text-align: center;
-    }
-  
-    .home-content h1 {
-      font-size: 30px;
-    }
-  
-    .home-content h3 {
-      font-size: 25px;
-      width: auto;
-      margin: 10px 0;
-    }
-  
-    .home-content p {
-      font-size: 16px;
-      margin: 10px 0 20px;
-    }
-  
-    .btn-box {
-      flex-direction: column;
-      width: 100%;
-    }
-  
-    .btn-box a {
-      width: 100%;
-      margin-bottom: 10px;
-    }
-  
-    .home-sci {
-      width: 100%;
-      bottom: 20px;
-      padding: 0;
-      justify-content: space-around;
-    }
-  
-    .video {
-      width: auto;
-      height: auto;
-      margin: 20px 0;
-    }
-  
-    iframe {
-      margin: 10px auto;
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
     }
     
-  
-    .home-sci a {
-      font-size: 25px;
-      width: 35px;
-      height: 35px;
+    @font-face {
+        font-family: font_01;
+        src: url(Font_01.ttf);
     }
-  
-    .home-sci a::before {
-      height: 0%;
+    
+    body {
+        background-color: black;
+        z-index: 1;
+        overflow-x: hidden; /* To prevent horizontal scrolling on smaller screens */
     }
-  
-    .home-sci a:hover::before {
-      height: 0%;
+    
+    /* Common styles for .logo_Yem and .logo_ */
+    .logo_Yem, .logo_ {
+        position: absolute;
+        top: 0;
+        left: 0;
     }
-  
-    h4 {
-      font-size: 20px;
-      margin: 10px 0;
+    
+    .logo_ {
+        width: 100%; /* Make the logo responsive to the container width */
+        height: auto; /* Maintain aspect ratio */
     }
-    .video {
-        text-align: center;
-        margin-top: 30px; /* Adjust margin as needed */
-        padding: 0 20px; /* Add padding for better spacing */
+    
+    .logo_Yem {
+        z-index: 1;
+        left: 50%;
+        top: 20%;
+        transform: translateX(-50%);
+        height: 10%; /* Adjust the height as needed */
+        width: auto; /* Maintain aspect ratio */
+        animation: yem-logo 1500ms ease-in-out forwards;
     }
-      
-    .video iframe {
-        border: dashed;
-        border-color: #00abf0;
-        max-width: 100%;
-        height: auto;
+    
+    @keyframes yem-logo {
+        0% { transform: translate(20px, 50px); }
+        60% { transform: translate(20px, 50px); }
+        100% { transform: translate(-50%, -50%); }
     }
-      
-    .home-sci {
-        position: relative; /* Make the social media links relative for proper positioning */
+    
+    /* Common styles for .logo-container and header */
+    .logo-container {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        animation: logoAnimation 1500ms ease-in-out forwards;
+    }
+    
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 5px 10%;
         display: flex;
-        justify-content: space-around;
-        margin-top: 40px; /* Adjust margin as needed */
-        padding: 5px;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+        opacity: 100%;
+        transition-duration: 250ms;
+        transition-timing-function: ease-in;
+        background: transparent;
     }
+    
+    .header:hover {
+        background: black;
+    }
+    
+    /* ... (Other styles remain unchanged) */
+    
+    /* Media query for mobile screens */
+    @media only screen and (max-width: 767px) {
+        .fill_form {
+            margin-left: 0; /* Adjust margin for smaller screens */
+        }
+    
+        /* Additional mobile styles as needed */
+    }
+    
   }
